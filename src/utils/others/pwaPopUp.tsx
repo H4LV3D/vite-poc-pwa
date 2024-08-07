@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import "./usePopUpPWA.css";
 
 export default function usePopUpPWA() {
   let deferredPrompt: any;
