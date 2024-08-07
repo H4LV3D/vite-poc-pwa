@@ -14,13 +14,8 @@ export default function AddToIosSafari(props: Props) {
   const { closePrompt, doNotShowAgain } = props;
 
   return (
-    <div className="fixed bottom-0 left-0 right-0 h-[50%] z-50 pb-12 px-4 text-white">
+    <div className="fixed bottom-0 left-0 right-0 h-[55%] z-50 pb-12 px-4 text-white">
       <div className="relative bg-black p-6 h-full rounded-xl space-y-3 ">
-        <div className="flex justify-end ">
-          <button className=" p-3" onClick={closePrompt}>
-            <FaTimes className="text-xl" />
-          </button>
-        </div>
         <p className="text-base">
           For the best experience, we recommend installing the distributor's app
           to your home screen!
