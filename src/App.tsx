@@ -1,19 +1,16 @@
 import React from "react";
-// import usePopUpPWA from "./utils/others/pwaPopUp";
-import AddToHomeScreen from "./utils/others/pwapopup/AddToHomeScreen/AddToHomeScreen";
+import AddToHomeScreen from "./utils/others/pwapopup/AddToHomeScreen";
 import useUserAgent from "./hooks/useUserAgent";
 
 type Props = {};
 
 const App = (props: Props) => {
-  // const { handleInstallClick, installable } = usePopUpPWA();
-
   const { isMobile, userAgentString, userAgent } = useUserAgent();
 
   return (
     <>
       <div className=" bg-white min-h-[100vh] w-full flex items-center justify-center ">
-        <div className="p-8 border rounded-xl max-w-lg min-h-[200px] space-y-3  ">
+        <div className="p-8 border rounded-xl max-w-lg min-h-[200px] space-y-3  mx-6 md:mx-0 ">
           <h1 className=" text-3xl font-[700] ">Kollectkollect Test POC</h1>
           <p className="text-[.9rem] ">
             This is a test POC for Vite and Vite-plugin-pwa, it is a simple app

@@ -8,7 +8,7 @@ import AddToMobileFirefoxIos from "./AddToMobileFirefoxIos";
 import AddToMobileChromeIos from "./AddToMobileChromeIos";
 import AddToSamsung from "./AddToSamsung";
 import AddToOtherBrowser from "./AddToOtherBrowser";
-import useUserAgent from "../../../../hooks/useUserAgent";
+import useUserAgent from "../../../hooks/useUserAgent";
 
 type AddToHomeScreenPromptType =
   | "safari"
