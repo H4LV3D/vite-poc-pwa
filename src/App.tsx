@@ -22,7 +22,12 @@ const App = (props: Props) => {
               Install
             </button>
 
-            <button className="bg-neutral-50 text-neutral-500 font-[500] min-w-[6rem] px-6 h-12 rounded-[6px]  ">
+            <button
+              onClick={() => {
+                window.location.href = "/login";
+              }}
+              className="bg-neutral-50 text-neutral-500 font-[500] min-w-[6rem] px-6 h-12 rounded-[6px]  "
+            >
               Login
             </button>
           </div>
