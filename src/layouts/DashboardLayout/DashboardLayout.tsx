@@ -1,5 +1,5 @@
 import React from "react";
-import BottomNav from "./bottomNav";
+import BottomNav from "./BottomNav";
 
 type Props = {
   children: React.ReactNode;
