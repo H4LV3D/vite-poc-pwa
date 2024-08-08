@@ -60,7 +60,7 @@ const Login = (props: Props) => {
         client: "web",
       };
       const res = await axios.post(
-        "http://localhost:5000/auth/login",
+        "https://vite-poc-pwa-server.onrender.com/auth/login",
         loginData
       );
       return res.data;
