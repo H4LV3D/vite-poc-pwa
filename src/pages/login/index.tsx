@@ -54,20 +54,20 @@ const Login = (props: Props) => {
   const loginMutation = useMutation({
     mutationFn: async (data: LoginProps) => {
       const loginData = {
-        identifier: data?.email,
-        password: data?.password,
+        username: "chidinwoke",
+        password: "password",
         role: ["user"],
         client: "web",
       };
       const res = await axios.post(
-        "https://staging-api.thecircularnet.com/api/v1/auth/login",
+        "http://localhost:5000/auth/login",
         loginData
       );
       return res.data;
     },
     onSuccess: (data) => {
-      console.log(data.data);
-      setUser(data.data);
+      console.log(data);
+      setUser(data);
       navigate("/dashboard");
     },
     onError: (error) => {

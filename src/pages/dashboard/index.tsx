@@ -2,6 +2,7 @@ import React from "react";
 import { useUser } from "../../hooks/useUser";
 import DashboardLayout from "../../layouts/DashboardLayout/DashboardLayout";
 import { useNavigate } from "react-router-dom";
+import { DrawerDemo } from "@/components/shared/drawer/Drawer";
 
 type Props = {};
 
@@ -19,6 +20,10 @@ const Dashboard = (props: Props) => {
         <p className="text-[.8rem] font-[500] mt-6 ">
           Access Token : {user?.accessToken}{" "}
         </p>
+
+        <div className="my-5">
+          <DrawerDemo />
+        </div>
 
         <button
           onClick={() => {
