@@ -6,8 +6,8 @@ const manifestForPlugin: Partial<VitePWAOptions> = {
   registerType: "prompt",
   includeAssets: ["favicon.ico", "apple-touch-icon.png", "masked-icon.svg"],
   manifest: {
-    name: "Kollect App",
-    short_name: "Kollect",
+    name: "Customer App",
+    short_name: "Customer",
     description: "We collect and collate payments from your customers",
     icons: [
       {
